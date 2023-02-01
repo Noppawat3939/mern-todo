@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+
+li {
+    list-style-type: circle;
+    margin: 10px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    border:1px solid lightgray;
+    width: 500px;
+    height: 300px;
+}
+
+.task_complete {
+    color: lightseagreen;
+    text-decoration: line-through;
+}
+
+.delete_btn {
+    color: red;
+    border: 1px solid red;
+    background-color: transparent;
+    padding: 5px;
+}
