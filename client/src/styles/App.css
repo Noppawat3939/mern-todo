@@ -9,21 +9,29 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: whitesmoke;
-    overflow: scroll;
+    background-color: whitesmoke; 
+}
+
+h1 {
+   text-align: center;
+   margin: 10px 0;
 }
 
 li {
     list-style-type: circle;
-    margin: 10px 20px 30px;
     display: flex;
+    align-items: center;
+    padding: 10px;
     justify-content: space-between;
+    border-bottom: 1px solid lightgray;
 }
 
 .container {
     border:1px solid lightgray;
     width: 500px;
     height: 300px;
+    border-radius: 8px;
+    overflow: scroll;
 }
 
 .task_complete {
@@ -36,4 +44,26 @@ li {
     border: 1px solid red;
     background-color: transparent;
     padding: 5px;
+    border-radius: 4px;
+}
+
+.add_input {
+    padding: 4px;
+    width: 300px;
+    margin: 0 20px;
+}
+
+.add_input:focus {
+    outline-color: lightseagreen;
+}
+
+.add_btn {
+    background-color: lightseagreen;
+    color: white;
+    padding: 6px 3px;
+    border: none;
+    width: 60px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
